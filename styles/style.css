@@ -1,0 +1,17 @@
+#currentdate {
+    color: rgba(50, 50, 250, 1)
+}
+body {
+    align-items: center;
+}
+
+header {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 10px 20px;
+}
+
+#profile-pic {
+    width: 200px;
+}
