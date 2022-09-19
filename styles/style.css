@@ -1,17 +1,54 @@
-#currentdate {
-    color: rgba(50, 50, 250, 1)
-}
-body {
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Bebas Neue', cursive;
 }
 
-header {
-    border-radius: 10px;
-    display: block;
+p, li {
+    font-family: 'Montserrat', sans-serif;
+}
+#currentdate {
+    color: rgb(255, 249, 203)
+}
+
+body {
+    align-items: center;
+    background-color: rgb(255, 233, 233);
+    padding: 50px;
+}
+
+header, main, footer {
+    max-width: 900px;
     margin: 0 auto;
+}
+
+.header, footer {
+    border-radius: 10px;
     padding: 10px 10px 20px;
+    background-color: rgb(66, 88, 108);
+    color: rgb(255, 233, 233);
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px rgba(56, 60, 63, 0.359);
+    align-content: center;
+    text-align: center;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 40% auto;
+    text-align: left;
+    padding: 25px 0 ;
+}
+
+header h1 {
+    font-size: 3em;
 }
 
 #profile-pic {
-    width: 200px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px rgba(255, 255, 255, 0.736);
+    margin: auto;
 }
