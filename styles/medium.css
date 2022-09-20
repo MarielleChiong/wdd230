@@ -1,6 +1,6 @@
 @media only screen and (max-width: 900px) {
     h1 {
-        font-size: 10px;
+        font-size: 2em;
     }
     header, .header {
         display: block;
