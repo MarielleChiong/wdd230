@@ -1,0 +1,8 @@
+@media only screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    .alignment {
+        grid-column: 1/ span 2;
+    }
+}
