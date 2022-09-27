@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Oswald:wght@500&display=swap');
+
+:root {
+    --font1: 'Nuosu SIL', serif;
+    --font2: 'Oswald', sans-serif;
+    --color1: #022b3a;
+    --color2: #1f7a8c;
+    --color3: #bfdbf7;
+    --color4: #e1e5f2;
+    --color5: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font2);
+    color: var(--color5);
+    margin: 0;
+}
+
+p {
+    font-family: var(--font1);
+}
+
+img {
+    width: auto;
+}
+
+body {
+    background-color: var(--color5);
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+header, footer {
+    background-color: var(--color1);
+    /* border-radius: 10px 10px 0 0; */
+    color: var(--color5);
+    padding: 20px;
+}
+
+h1 {
+    padding: 10px auto 0;
+}
+
+h2 {
+    padding: 0 auto 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.example-box {
+    border-radius: 10px;
+    background-color: var(--color4);
+    border-style: solid;
+    border-color: var(--color1);
+    margin: 10px;
+}
+
+h3, h4, .example-box p {
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+    margin: 10px;
+}
+
+h3 {
+    background-color: var(--color2);
+    color: var(--color5);
+    padding: 10px;
+    margin: 0;
+    min-height: 60px;
+}
+
+h4 {
+    color: var(--color1);
+    font-family: var(--font1);
+}
+
+.example-box img {
+    max-width: 90%;
+    max-height: 90%;
+}
