@@ -50,6 +50,7 @@ h2 {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 85%;
 }
 
 .example-box {
@@ -57,7 +58,7 @@ main {
     background-color: var(--color4);
     border-style: solid;
     border-color: var(--color1);
-    margin: 20px;
+    margin: 10px;
 }
 
 h3, h4, .example-box p {
