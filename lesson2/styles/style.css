@@ -63,6 +63,7 @@ main {
 h3, h4, .example-box p {
     text-align: left;
     padding: 10px;
+    margin: 20px;
 }
 
 h3 {
