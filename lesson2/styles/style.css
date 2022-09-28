@@ -62,13 +62,14 @@ main {
 
 h3, h4, .example-box p {
     text-align: left;
+    padding: 10px;
 }
 
 h3 {
     border-radius: 5px 5px 0 0;
     background-color: var(--color2);
     color: var(--color5);
-    padding: 10px;
+    padding: 50px;
     margin: 0;
     min-height: 60px;
 }
