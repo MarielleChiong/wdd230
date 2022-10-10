@@ -1,5 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&family=Yeseva+One&display=swap');
+
+:root {
+    --primary-color: #303238;
+    --secondary-color: #7183ab;
+    --accent-1: #e1e7eb;
+    --accent-2: #ffffff;
+
+    --heading-font: 'Yeseva One', cursive;
+    --paragraph-font: 'Work Sans', sans-serif;
+}
+
+/* body style */
+body {
+    margin: 0;
+    padding: 0;
+    transition-duration: 1s;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+/* header styles */
+.logo {
+    max-width: 200px;
+    border-radius: 100%;
+}
+
+nav {
+    background-color: var(--primary-color);
+    line-height: 1em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2em;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--secondary-color);
+    justify-content: center;
+}
+
+nav a {
+    padding: 10px 20px;
+    min-width: 100px;
+    text-decoration: none;
+    color: var(--accent-2);
+    background-color: var(--secondary-color);
+}
+
+nav ul a:hover {
+    background-color: var(--accent-2);
+    color: var(--primary-color);
+    border-radius: 25%;
+    transition-duration: 1s;
+}
+
+nav ul a:click {
+    background-color: var(--primary-color);
+}
+
+nav a:visited {
+    color: var(--accent-2);
+}
 
 
+
+/* main style */
+main {
+    padding: 20px;
+    max-width: 80%;
+    text-align: center;
+    margin: 10px auto;
+}
+h1 {
+    border-bottom: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: var(--primary-color);
+    padding-bottom: 10px;
+}
+
+
+/* footer style */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-1);
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+}
+
+
+
+/* HOME special styles */
+#domain {
+    font-family: var(--heading-font);
+}
+.home-logo {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+    max-width: 640px;
+    margin: 1.5em auto;
+    border-style: solid;
+    display: flex;
+}
+.home-logo img {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* COLOR special styles */
+#color_scheme div {
+    border: solid;
+    border-color: black;
+    /* border-width: 3px 4px; */
+    padding: 10px;
+}
+#primary {
+    color: var(--accent-2);
+    background-color: var(--primary-color);
+}
+
+#secondary {
+    background-color: var(--secondary-color);
+
+}
+
+#accent_1 {
+    background-color: var(--accent-1);
+}
+
+#accent_2 {
+    background-color: var(--accent-2);
+}
+
+
+
+/* AUDIENCE special styles */
 .persona_profile_picture {
     max-width: 300px;
 }
+
+/* TYPOGRAPHY special styles */
