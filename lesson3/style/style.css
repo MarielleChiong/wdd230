@@ -135,6 +135,14 @@ footer p {
     margin: 0 auto;
 }
 
+#left-logo-img {
+    grid-area: 1 span 2;
+}
+
+#right-logo-img {
+    grid-column: 2 span 3;
+}
+
 /* COLOR special styles */
 #color_scheme div {
     border: solid;
