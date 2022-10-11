@@ -121,27 +121,21 @@ footer p {
     font-family: var(--heading-font);
 }
 .home-logo {
-    background-color: var(--secondary-color);
+    background-image: linear-gradient(to right, var(--accent-1), var(--secondary-color), var(--primary-color), var(--secondary-color), var(--accent-1));
     text-align: center;
     padding: 10px;
     max-width: 70%;
     margin: 1.5em auto;
-    border-style: solid;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
 }
 .home-logo img {
     max-width: 300px;
     margin: 0 auto;
+
 }
 
-#left-logo-img {
-    grid-area: 1 span 2;
-}
-
-#right-logo-img {
-    grid-column: 2 span 3;
-}
 
 footer a {
     color: var(--accent-1);
