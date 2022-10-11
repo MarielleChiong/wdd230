@@ -124,14 +124,14 @@ footer p {
     background-color: var(--secondary-color);
     text-align: center;
     padding: 10px;
-    max-width: 80%;
+    max-width: 70%;
     margin: 1.5em auto;
     border-style: solid;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .home-logo img {
-    max-width: 200px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
