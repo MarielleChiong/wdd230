@@ -127,7 +127,8 @@ footer p {
     max-width: 80%;
     margin: 1.5em auto;
     border-style: solid;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .home-logo img {
     max-width: 200px;
