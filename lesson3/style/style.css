@@ -73,8 +73,8 @@ nav a {
 nav ul a:hover {
     background-color: var(--accent-2);
     color: var(--primary-color);
-    border-radius: 25%;
-    transition-duration: 1s;
+    font-size: 1.2em;
+    /* transition-duration: 1s; */
 }
 
 nav ul a:click {
@@ -124,13 +124,13 @@ footer p {
     background-color: var(--secondary-color);
     text-align: center;
     padding: 10px;
-    max-width: 640px;
+    max-width: 80%;
     margin: 1.5em auto;
     border-style: solid;
     display: flex;
 }
 .home-logo img {
-    max-width: 300px;
+    max-width: 200px;
     margin: 0 auto;
 }
 
