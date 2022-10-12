@@ -131,7 +131,7 @@ footer p {
     justify-content: space-evenly;
 }
 .home-logo img {
-    max-width: 300px;
+    max-width: 100%;
     margin: 0 auto;
 
 }
