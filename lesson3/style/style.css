@@ -121,7 +121,7 @@ footer p {
     font-family: var(--heading-font);
 }
 .home-logo {
-    background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color), var(--accent-1), var(--accent-2));
+    /* background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color), var(--accent-1), var(--accent-2)); */
     text-align: center;
     padding: 10px;
     max-width: 100%;
