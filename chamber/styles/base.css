@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&family=Yeseva+One&display=swap');
+
+:root {
+    --primary-color: #303238;
+    --secondary-color: #7183ab;
+    --accent-1: #e1e7eb;
+    --accent-2: #ffffff;
+
+    --heading-font: 'Yeseva One', cursive;
+    --paragraph-font: 'Work Sans', sans-serif;
+}
+
+body {
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
