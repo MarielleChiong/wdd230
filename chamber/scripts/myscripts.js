@@ -10,7 +10,7 @@ var objToday = new Date(),
 var today = mm + "/" + dd + "/" + yyyy + " " + curHour + ":" + curMinute + ":" + curSeconds + curMeridiem;
 
 // document.getElementById("currentdate").textContent = today;
-document.getElementsByClassName("date").textContent = today;
+document.getElementById("date1").textContent = today;
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
