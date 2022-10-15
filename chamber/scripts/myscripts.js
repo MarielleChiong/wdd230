@@ -11,3 +11,12 @@ var today = mm + "/" + dd + "/" + yyyy + " " + curHour + ":" + curMinute + ":" +
 
 // document.getElementById("currentdate").textContent = today;
 document.getElementsByClassName("date").textContent = today;
+
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("open");
+    document.getElementById("hamburgerBtn").classList.toggle("open");
+}
+
+const x = document.getElementById("hamburgerBtn");
+x.onclick = toggleMenu;
+
