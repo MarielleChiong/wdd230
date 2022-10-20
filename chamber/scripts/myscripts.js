@@ -22,7 +22,7 @@ const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
 
 
-if (dayOfWeek == "4") {
+if (dayOfWeek == "1") {
 	greet = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 } else if (dayOfWeek == "2") {
 	greet = "🤝🏼 Come join us for the chamber meet and greet tomorrow at 7:00 p.m.";
