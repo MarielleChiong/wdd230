@@ -34,7 +34,7 @@ body {
 
 
 /* header styles */
-
+/* 
 header {
     display: grid;
     grid-template-columns: auto 5fr 1fr;
@@ -69,11 +69,32 @@ header p {
 
 header #currentdate {
     color: var(--accent-1);
+} */
+
+header {
+    display: block;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent-1);
+    padding: 0 0 10px 0;
+}
+
+img.logo-img {
+    max-width: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+#meetandgreet {
+    padding: 2% 5%;
 }
 
 nav {
-    grid-area: 1/3/2/4;
-    text-align: right;
+    text-align: center;
 }
 
 nav ul {
@@ -81,25 +102,34 @@ nav ul {
     margin: 0;
 }
 
+nav ul li{
+    padding: 1.5%;
+
+}
+
 nav ul li a {
     text-decoration: none;
     color: var(--accent-1);
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     list-style: none;
-    padding: 10px;
     width: 100%;
+    margin: 0%;
 }
 
-nav ul li.active a {
-    padding: 1.5em;
-    background-color: rgba(0, 0, 0, .2);
-    color: var(--accent-1);
-}
 
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, .3);
-    padding: 10px;
+    padding: 2% 25%;
+    color: var(--accent-1);
+    border-radius: 20%;
+    transition: .5s;
     width: 100%;
+    margin: 0 auto;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, .1);
+    color: var(--accent-1);
 }
 
 nav ul li a:visited {
@@ -115,6 +145,7 @@ nav ul.open {display: block;}
     font-size: 2em;
     /* grid-area: 1/3/2/4; */
     color: var(--accent-1);
+    cursor: pointer;
 }
 
 #hamburgerBtn span:nth-child(1) {display: block;}
