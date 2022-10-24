@@ -83,7 +83,7 @@
     }
     
     #cta {
-        grid-area: 1/1/2/3;
+        grid-area: 1/1/2/4;
         min-height: 15em;
     }
     
@@ -96,7 +96,7 @@
     }
     
     #weather {
-        grid-area: 1/3/3/4;
+        grid-area: 2/3/3/4;
     }
     
     #spotlight-box {
