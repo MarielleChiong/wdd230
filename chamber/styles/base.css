@@ -195,8 +195,15 @@ main section {
     border-radius: 0 0 10px 10px;
 }
 
+/* Weather Section */
+
 #weather-img {
     max-width: 35%;
+}
+
+#weather {
+    background-color: var(--accent-1);
+    color: var(--primary-color);
 }
 
 
