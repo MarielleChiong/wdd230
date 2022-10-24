@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber Home Page</title>
     <meta name="description" content="Home page for Chamber of Commerce website. Created for a school assignment.">
+    
+    <!-- CSS Link -->
     <link rel="icon" type="image/png" href="/wdd230/chamber/images/favicomatic/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="/wdd230/chamber/styles/base.css">
     <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css">
@@ -16,19 +18,20 @@
         <a href="/wdd230/chamber/index.html">
             <img 
                 class="logo-img" 
-                src="/wdd230/chamber/images/logo.png" alt="logo-img" 
+                src="/wdd230/chamber/images/logo.webp" alt="logo-img" 
                 srcset="/wdd230/chamber/images/logo@0.25x.png 1x, 
                         /wdd230/chamber/images/logo@0.5x.png 2x,
                         /wdd230/chamber/images/logo.png 3x"
-            >
+                >
         </a>
         <h1>Ormoc Chamber of Commerce</h1>
         <p class="headerdate">Current Date: <span id="currentdate"></span></p>
         <p id="pmeetandgreet"><span id="meetandgreet"></span></p>
-
+        
         <nav>
             <button id="hamburgerBtn" class="open"><span>X</span><span>&#9776;</span></button>
             <ul id="primaryNav">
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
@@ -38,7 +41,13 @@
     </header>
     <main>
         <section id="cta">
-            <p>call to action section</p>
+            <img src="/wdd230/chamber/images/wdd230-org-Medium.jpg" 
+                alt="Hero img"
+                srcset="/wdd230/chamber/images/wdd230-org-Small.jpg 1x,
+                        /wdd230/chamber/images/wdd230-org-Medium.jpg 2x,
+                        /wdd230/chamber/images/wdd230-org-Large.jpg 3x"                        
+            >
+            <!-- <p>call to action section</p> -->
         </section>
         <section id="news">
             <p>news section</p>
@@ -47,7 +56,21 @@
             <p>events section</p>
         </section>
         <section id="weather">
-            <p>weather section</p>
+            <h2>Weather</h2>
+            <div class="weather-top">
+                <picture>
+                    <img id="weather-img" src="/wdd230/chamber/images/weather.png" alt="Sun and cloud">
+                </picture>
+                <p><span class="degrees"></span>°</p>
+            </div>
+                <div class="weather-center">
+                  <p>Partly Cloudy</p>
+                </div>
+                <div class="weather-bottom">  
+                    <p>Speed: <span class="speed"></span></p>
+                    <p>Wind Chill: <span class="wind"></span></p>
+                </div>
+                <script src="/wdd230/chamber/scripts/windchill.js"></script>
         </section>
         <div id="spotlight-box">
             <section class="spotlight" id="sl1">

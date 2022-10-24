@@ -31,6 +31,10 @@ body {
     text-align: center;
 }
 
+img {
+    width: 100%;
+}
+
 
 
 /* header styles */
@@ -81,7 +85,6 @@ header {
 
 img.logo-img {
     max-width: 200px;
-    width: 100%;
     cursor: pointer;
 }
 
@@ -157,7 +160,7 @@ nav ul.open {display: block;}
 
 
 
-/* Main styles */
+/* Home Main styles */
 
 main {
 
@@ -190,6 +193,10 @@ main section {
 
 #sl3 {
     border-radius: 0 0 10px 10px;
+}
+
+#weather-img {
+    max-width: 35%;
 }
 
 
