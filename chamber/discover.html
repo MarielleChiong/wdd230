@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Home Page</title>
-    <meta name="description" content="Home page for Chamber of Commerce website. Created for a school assignment.">
+    <title>Discover</title>
+    <meta name="description" content="Discover page for Chamber of Commerce website. Created for a school assignment.">
     
-    <!-- CSS Link -->
+    <!-- CSS Link(s) -->
     <link rel="icon" type="image/png" href="/wdd230/chamber/images/favicomatic/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="/wdd230/chamber/styles/base.css">
     <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css">
     <link rel="stylesheet" href="/wdd230/chamber/styles/large.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/discover.css">
+
 </head>
 <body>
     <header>
@@ -31,8 +33,8 @@
         <nav>
             <button id="hamburgerBtn" class="open"><span>X</span><span>&#9776;</span></button>
             <ul id="primaryNav">
-                <li><a href="#" id="open-tab">Home</a></li>
-                <li><a href="/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="/wdd230/chamber/discover.html" id="open-tab">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
@@ -40,51 +42,38 @@
         </nav>
     </header>
     <main>
-        <section id="cta">
-            <img src="/wdd230/chamber/images/wdd230-org.jpg" 
-                alt="Hero img"
-                srcset="/wdd230/chamber/images/wdd230-org-Small.jpg 3x,
-                        /wdd230/chamber/images/wdd230-org-Medium.jpg 2x,
-                        /wdd230/chamber/images/wdd230-org-Large.jpg 1x"                        
+        <section>
+            <h2>City of Ormoc</h2>
+            <img 
+                src="/wdd230/chamber/images/placeholder.png" 
+                data-src="/wdd230/chamber/images/discover/ormoc.png" 
+                alt="Ormoc City"
             >
-            <!-- <p>call to action section</p> -->
+            <p>Ormoc, officially known as the City of Ormoc (Cebuano: Dakbayan sa Ormoc; Waray: Syudad han Ormoc; Tagalog: Lungsod ng Ormoc), is a 1st class independent component city in the Eastern Visayas region of the Philippines.</p>
         </section>
-        <section id="news">
-            <p>news section</p>
+
+        <section>
+            <h2>Demographics</h2>
+            <img 
+                src="/wdd230/chamber/images/placeholder.png" 
+                data-src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Ph_locator_leyte_ormoc.png" 
+                alt="Ormoc in Leyte"
+                >
+            <p>According to the 2020 census, it has a population of 230,998 inhabitants, making it the second most-populous city in the province of Leyte after the provincial capital of Tacloban.</p>
         </section>
-        <section id="events">
-            <p>events section</p>
+
+        <section> 
+            <img 
+                src="/wdd230/chamber/images/placeholder.png" 
+                data-src="/wdd230/chamber/images/discover/map.png"
+                alt="ormoc economy">
+            <p>Ormoc is the economic, cultural, commercial and transportation hub of western Leyte.</p>
         </section>
-        <section id="weather">
-            <h2>Weather</h2>
-            <div class="weather-top">
-                <picture>
-                    <img id="weather-img" src="/wdd230/chamber/images/weather.png" alt="Sun and cloud">
-                </picture>
-                <p><span class="degrees"></span>°</p>
-            </div>
-                <div class="weather-center">
-                  <p>Partly Cloudy</p>
-                </div>
-                <div class="weather-bottom">  
-                    <p>Speed: <span class="speed"></span></p>
-                    <p>Wind Chill: <span class="wind"></span></p>
-                </div>
-                <script src="/wdd230/chamber/scripts/windchill.js"></script>
-        </section>
-        <div id="spotlight-box">
-            <section class="spotlight" id="sl1">
-                <p>1st spotlight</p>
-            </section>
-            <section class="spotlight" id="sl2">
-                <p>2nd spotlight</p>
-            </section>
-            <section class="spotlight" id="sl3">
-                <p>3rd spotlight</p>
-            </section>
-        </div>
 
     </main>
+
+
+
     <footer>
         <img src="/wdd230/chamber/images/logo.png" alt="logo image">
         <div id="contact-info">
@@ -99,5 +88,9 @@
         <script src="https://chillyall.github.io/wdd230/scripts/myscripts.js"></script>
         <script src="/wdd230/chamber/scripts/myscripts.js"></script>
     </footer>
+
+    <!-- JS Link(s) -->
+    <script src="/wdd230/chamber/scripts/lazyload.js"></script>
+
 </body>
 </html>
