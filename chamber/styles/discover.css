@@ -7,17 +7,9 @@ main section {
 }
 
 main img {
-    max-width: 200px;
-    border-radius: 50px;
-    filter: grayscale(1);
+    max-width: 500px;
 }
 
-main img:hover {
-    max-width: 500px;
-    border-radius: 5px;
-    filter: none;
-    transition-duration: .5s;
-}
 
 @media only screen and (min-width: 768px) {
     main {
@@ -26,5 +18,16 @@ main img:hover {
     main section p {
         padding: 0 100px;
     }
+    main img {
+        max-width: 200px;
+        border-radius: 50px;
+        filter: grayscale(1);
+    }
     
+    main img:hover {
+        max-width: 500px;
+        border-radius: 5px;
+        filter: none;
+        transition-duration: .5s;
+    }
 }
