@@ -8,12 +8,14 @@ body {
 
 table {
     margin: 10px auto;
-    border: 3px solid black;
+    border: solid black;
     background-color: #F8E1DD;
+    border-collapse: collapse;
 }
 
 td, td {
     padding: 5px;
+    border: 1px solid;
 }
 
 
@@ -24,6 +26,7 @@ td, td {
 th {
     background-color: #F6A48D;
     padding: 5px 10px;
+    border: solid;
 }
 
 td {
