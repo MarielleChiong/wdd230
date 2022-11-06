@@ -9,6 +9,16 @@ main {
 
 /* ---------- FORM ------------- */
 
+form {
+    border-radius: 25px;
+    background: linear-gradient(145deg, #dadada, #ffffff);
+    box-shadow:  24px 24px 48px #c6c6c6,
+                -24px -24px 48px #ffffff;
+
+    margin: 45px 5px;
+    padding: 10px;
+}
+
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #445ba9;
@@ -50,7 +60,7 @@ form label.sbs {
 
 form input.submitBtn {
     border: none;
-    background-color: #9c2c13;
+    background-color: #22222c;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -71,5 +81,11 @@ form label.top input:required:valid {
 @media only screen and (min-width: 64rem) {
     form label.sbs {
         padding: .4rem 0;
+    }
+
+    form {
+        
+    padding: 20px;
+    margin: 50px;
     }
 }
