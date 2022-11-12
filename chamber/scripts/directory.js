@@ -7,8 +7,8 @@ fetch(jsonFile)
     })
     .then(function (jsonObject) {
         console.table(jsonObject);
-        const business = jsonObject
-        business.forEach(displayBusiness)
+        const business = jsonObject["business"]
+        business.forEach(displayBusiness);
     });
 
 function displayBusiness(business) {
@@ -22,6 +22,9 @@ function displayBusiness(business) {
     let info = document.createElement("p");
 
     name.textContent = `${business.name}`
+    address.textContent = `${business.address}`
+    phone.textContent = business.phoneNumber
+    link.textContent = "<a href='"+ business.url.split('href=')[1]+"' >"+business.url.split('href=')[1]+"</a>"
 
 
 
@@ -30,10 +33,14 @@ function displayBusiness(business) {
 
 
     card.appendChild(name);
-    // card.appendChild(address);
-    // card.appendChild(phone);
-    // card.appendChild(link);
-    // card.appendChild(img);
-    // card.appendChild(membershiplv);
-    // card.appendChild(info);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(link);
+    card.appendChild(img);
+    card.appendChild(membershiplv);
+    card.appendChild(info);
+
+
+
+    document.querySelector("div.directory").appendChild(card)
 }
