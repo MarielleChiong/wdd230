@@ -1,3 +1,7 @@
+body {
+    background-color: #dadada;
+}
+
 /* ---------- MAIN ------------- */
 
 main {
@@ -11,12 +15,13 @@ main {
 
 form {
     border-radius: 25px;
-    background: linear-gradient(145deg, #dadada, #ffffff);
-    box-shadow:  24px 24px 48px #c6c6c6,
-                -24px -24px 48px #ffffff;
+    background-color:  #dadada;
+    box-shadow:  5px 5px 8px #c6c6c6,
+                -5px -5px 8px #ffffff;
 
-    margin: 45px 5px;
+    margin: 45px 0;
     padding: 10px;
+    width: 100%;
 }
 
 form fieldset {
@@ -85,7 +90,7 @@ form label.top input:required:valid {
 
     form {
         
-    padding: 20px;
+    padding: 50px;
     margin: 50px;
     }
 }
