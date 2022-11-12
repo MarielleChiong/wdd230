@@ -2,6 +2,7 @@ main {
     align-content: center;
     text-align: center;
     justify-content: center;
+    display: block;
 }
 
 .directory {
