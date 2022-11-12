@@ -21,11 +21,17 @@ function displayBusiness(business) {
     let membershiplv = document.createElement("p");
     let info = document.createElement("p");
 
-    name.textContent = `${business.name}`
-    address.textContent = `${business.address}`
-    phone.textContent = business.phoneNumber
-    link.textContent = "<a href='"+ business.url.split('href=')[1]+"' >"+business.url.split('href=')[1]+"</a>"
+    name.textContent = `${business.name}`;
+    address.textContent = `${business.address}`;
+    phone.textContent = business.phoneNumber;
 
+    link.textContent = "Website Link"
+    link.setAttribute = ("href", business.url);
+    link.setAttribute = ("target", "__blank")
+    
+    img.setAttribute("src", business.img);
+    img.setAttribute("alt", `Logo image of ${business.name}`);
+    img.setAttribute("loading", "lazy");
 
 
 
