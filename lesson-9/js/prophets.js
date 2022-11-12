@@ -11,6 +11,22 @@ fetch(requestURL)
     prophets.forEach(displayProphets);
 });
 
+// for ordinal suffix of i
+function ordinal_suffix_of(i) {
+  var j = i % 10,
+      k = i % 100;
+  if (j == 1 && k != 11) {
+      return i + "st";
+  }
+  if (j == 2 && k != 12) {
+      return i + "nd";
+  }
+  if (j == 3 && k != 13) {
+      return i + "rd";
+  }
+  return i + "th";
+}
+
 
 
   function displayProphets(prophet) {
@@ -30,7 +46,7 @@ fetch(requestURL)
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
+    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${ordinal_suffix_of(prophet.order)} Latter-day President`);
     portrait.setAttribute('loading', 'lazy');
 
   
