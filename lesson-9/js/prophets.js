@@ -23,14 +23,14 @@ fetch(requestURL)
     // let death = document.createElement('p');
   
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = prophet.name.toUpperCase() + ' ' + prophet.lastname.toUpperCase();
-    birthdate.textContent = 'Date of Birth: ' + prophet.birthdate
-    birthPlace.textContent = 'Place of Birth: ' + prophet.birthplace
+    h2.textContent = `${prophet.name.toUpperCase()} ${prophet.lastname.toUpperCase()}`;
+    birthdate.textContent = `Date of Birth: ${prophet.birthdate}`
+    birthPlace.textContent = `Place of Birth ${prophet.birthplace}`
     // death.textContent = 'Date of Death: ' + prophet.death
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', 'Portait of ' + prophet.name + ' ' + prophet.lastname);
+    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
     portrait.setAttribute('loading', 'lazy');
 
   
