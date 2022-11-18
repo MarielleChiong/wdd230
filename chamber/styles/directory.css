@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #303238;
+    --secondary-color: #7183ab;
+    --accent-1: #e1e7eb;
+    --accent-2: #ffffff;
+}
+
 main {
     align-content: center;
     text-align: center;
@@ -45,23 +52,24 @@ main section img {
     font-size: 20px;
 }
 
-
-.btn:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-
-.btn.active{
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.427);
-    font-weight: 600;
-}
-
 .btn {
     cursor: pointer;
     border: none;
     margin: 0;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
+    padding: 10px 50px;
+    background-color: var(--secondary-color);
+    text-transform: uppercase;
   }
 
-  
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-1);
+  }
+
+.btn.active{
+    color: var(--accent-2);
+    background-color: var(--primary-color);
+    font-weight: 600;
+}
+
+
