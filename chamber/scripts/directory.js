@@ -27,6 +27,7 @@ function displayBusiness(business) {
 
     link.setAttribute("href", business.url);
     link.setAttribute("target", "__blank");
+    link.setAttribute("class", "websiteLink")
     link.textContent = "Website Link"
     
     img.setAttribute("src", business.img);
@@ -34,9 +35,6 @@ function displayBusiness(business) {
     img.setAttribute("loading", "lazy");
 
     membershiplv.textContent = `Membership Level: ${business.membershipLevel}`
-
-
-
 
     card.appendChild(name);
     card.appendChild(img);
@@ -46,7 +44,22 @@ function displayBusiness(business) {
     card.appendChild(membershiplv);
     card.appendChild(info);
 
-
-
     document.querySelector("div.directory").appendChild(card)
 }
+
+const display = document.querySelector("#dir");
+
+function listView(){
+  display.classList.add("dirlist");
+  display.classList.remove("dirgrid");
+  document.getElementById("listbtn").classList.add("active");
+  document.getElementById("gridbtn").classList.remove("active");
+}
+
+function gridView(){
+  display.classList.add("dirgrid");
+  display.classList.remove("dirlist");
+  document.getElementById("listbtn").classList.remove("active");
+  document.getElementById("gridbtn").classList.add("active")
+}
+

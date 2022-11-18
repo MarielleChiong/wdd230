@@ -1,0 +1,35 @@
+@media only screen and (min-width: 768px) {
+
+        
+    .dirlist p, 
+    .dirlist .websiteLink, 
+    /* .dirlist img,  */
+    .dirlist h2 {
+        margin-top: 40px;
+        text-align: left;
+        justify-content: left;
+    }
+        
+    .dirlist section{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1.5fr .75fr .75fr 1fr auto;
+        text-align: left;
+        min-height: fit-content;
+        column-gap: 10px;
+    }
+
+    .dirlist img{
+        margin: 0;
+        width: 100%;
+        max-width: 100px;
+        border-radius: 5px;
+        grid-area: 1/1/1/1;
+    }
+    
+    .dirlist h2 {
+        text-align: left;
+        margin: 0;
+    }
+    
+
+}

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css">
     <link rel="stylesheet" href="/wdd230/chamber/styles/large.css">
     <link rel="stylesheet" href="/wdd230/chamber/styles/directory.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/directory-large.css">
 </head>
 <body>
     <header>
@@ -43,10 +44,13 @@
     <main>
         <h1>Business Directory</h1>
 
-        <div class="directory"></div>
-
+        <div id="btnContainer">
+            <button id="listbtn" class="btn" onclick="listView()">List</button> 
+            <button id="gridbtn" class="btn active" onclick="gridView()">Grid</button>
+        </div>
+        <div id="dir" class="directory"></div>
         <script src="/wdd230/chamber/scripts/directory.js"></script>
-
+        
 
     </main>
 

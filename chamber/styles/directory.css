@@ -18,3 +18,50 @@ main section img {
     border-radius: 20px;
 }
 
+.dirlist {
+    display: block;
+}
+
+.dirlist section{
+    display: block;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+} 
+
+.dirlist img{
+    width: 20%;
+}
+
+.dirlist section:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dirlist section:nth-child(9){margin-bottom: 25px;}
+
+#btnContainer{
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+.btn.active{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.427);
+    font-weight: 600;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+  }
+
+  
