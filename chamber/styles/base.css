@@ -212,6 +212,11 @@ main section {
     max-width: 500px;
 }
 
+.weatherIcon {
+    max-width: 100px;
+    width: 100%;
+}
+
 
 /* Footer styles */
 

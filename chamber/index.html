@@ -41,12 +41,16 @@
     </header>
     <main>
         <section id="cta">
-            <img src="/wdd230/chamber/images/wdd230-org.jpg" 
+            <!-- <img src="/wdd230/chamber/images/wdd230-org.jpg" 
                 alt="Hero img"
                 srcset="/wdd230/chamber/images/wdd230-org-Small.jpg 3x,
                         /wdd230/chamber/images/wdd230-org-Medium.jpg 2x,
                         /wdd230/chamber/images/wdd230-org-Large.jpg 1x"                        
-            >
+            > -->
+            <source media="(min-width: 1024px)" srcset="/wdd230/chamber/images/wdd230-org-Large.jpg">
+            <source media="(min-width: 560px)" srcset="/wdd230/chamber/images/wdd230-org-Medium.jpg">
+            <img src="/wdd230/chamber/images/wdd230-org-Small.jpg" alt="hero image">
+            
             <!-- <p>call to action section</p> -->
         </section>
         <section id="news">
@@ -55,23 +59,27 @@
         <section id="events">
             <p>events section</p>
         </section>
+
+
         <section id="weather">
             <h2>Weather</h2>
-            <div class="weather-top">
+            <!-- <div class="weather-top">
                 <picture>
                     <img id="weather-img" src="/wdd230/chamber/images/weather.png" alt="Sun and cloud">
                 </picture>
-                <p><span class="degrees"></span>°</p>
-            </div>
+            </div> -->
                 <div class="weather-center">
-                  <p>Partly Cloudy</p>
                 </div>
-                <div class="weather-bottom">  
+                <!-- <div class="weather-bottom">  
                     <p>Speed: <span class="speed"></span></p>
                     <p>Wind Chill: <span class="wind"></span></p>
-                </div>
-                <script src="/wdd230/chamber/scripts/windchill.js"></script>
+                </div> -->
+                <!-- <script src="/wdd230/chamber/scripts/windchill.js"></script>
+                <script src="/wdd230/lesson10/scripts/weatherapi.js"></script> -->
+                <script src="/wdd230/chamber/scripts/weather.js"></script>
         </section>
+
+
         <div id="spotlight-box">
             <section class="spotlight" id="sl1">
                 <p>1st spotlight</p>
