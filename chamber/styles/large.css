@@ -80,10 +80,14 @@
         grid-template-columns: repeat(4, 1fr);
         max-width: 95%;
     }
+
+    main section {
+        min-height: 100px;
+    }
     
     #cta {
         grid-area: 1/2/3/4;
-        min-height: 10em;
+        min-height: 25em;
     }
     
     #news {
@@ -107,26 +111,19 @@
         display: block;
         align-items: center;
         width: 100%;
+        padding: 2px 0;
+        border-radius: 20px;
     }
     
     .spotlight {
         background-color: var(--secondary-color);
-        width: 100%;
+        width: 98%;
         min-height: 20em;
         margin: 0;
         padding: 0;
-        border-radius: none;
+        border-radius: 20px;
         border: none;
     }
     
-    /* #sl1 {
-        border-radius: 10px 0 0 10px;
-        margin-left: 5px;
-    }
-    
-    #sl3 {
-        border-radius: 0 10px 10px 0;
-        margin-right: 5px;
-    } */
     
 }
