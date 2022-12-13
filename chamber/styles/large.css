@@ -48,6 +48,10 @@
         padding: 0 5px;
     }
 
+    nav ul li a#open-tab {
+        padding: 5px 10px;
+    }
+
     nav ul li a:hover {
         padding: 5px;
         border-radius: 0;
@@ -82,12 +86,12 @@
     }
 
     main section {
-        min-height: 100px;
+        min-height: 1em;
     }
     
     #cta {
         grid-area: 1/2/3/4;
-        min-height: 25em;
+        min-height: 1em;
     }
     
     #news {
@@ -118,7 +122,7 @@
     .spotlight {
         background-color: var(--secondary-color);
         width: 98%;
-        min-height: 20em;
+        min-height: 1em;
         margin: 0;
         padding: 0;
         border-radius: 20px;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Join Page</title>
+    <title>Chamber Home Page</title>
     <meta name="description" content="Home page for Chamber of Commerce website. Created for a school assignment.">
     
     <!-- CSS Link -->
@@ -35,38 +35,35 @@
                 <li><a href="/wdd230/chamber/index.html">Home</a></li>
                 <li><a href="/wdd230/chamber/discover.html">Discover</a></li>
                 <li><a href="/wdd230/chamber/directory.html">Directory</a></li>
-                <li><a href="/wdd230/chamber/join.html" id="open-tab">Join</a></li>
-                <li><a href="/wdd230/chamber/contact.html">Contact</a></li>
+                <li><a href="/wdd230/chamber/join.html">Join</a></li>
+                <li><a href="/wdd230/chamber/contact.html" id="open-tab">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <form action="/wdd230/chamber/thankyou.html">
+        <h1>Contact us</h1>
+        <h3>Ormoc Chamber of Commerce</h3>
+        <p>contact@philchamber.com</p>
+        <p>+63 922 8833 060</p>
+        <h3>Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1958.1695396286473!2d124.60450599999999!3d11.013166!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd38023e5d9772d2e!2sCity%20Government%20of%20Ormoc!5e0!3m2!1sen!2sus!4v1670943681819!5m2!1sen!2sus" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        <div id="base">
+        <br>
+
+        <h3>Got Questions and Suggestions?</h3>
+        
+        <form action="/wdd230/chamber/thankyoucontact.html">
+            <p>Please do not hesitate to ask anything regarding the Ormoc Chamber of Commerce.</p>
             <fieldset>
-                <legend>Applicant Information</legend>
+                <legend>Contact Information</legend>
                 <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Business Position Title <input type="text" name="lname" ></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="username@example.com" required></label>
-                <label class="top">Cellphone Number* <input type="tel" name="phone" required></label>
-                <label class="top">Business Name* <input type="text" name="business" required></label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label class="sbs"><input type="radio" name="membership" value="NP" class="NP">NP Membership (no fee)</label>
-                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership ($50 fee)</label>
-                <label class="sbs"><input type="radio" name="membership" value="silver">Silver Membership ($100 fee)</label>
-                <label class="sbs"><input type="radio" name="membership" value="gold">Gold Membership ($200 fee)</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Business Description</legend>
-                <label class="top">Please describe your business briefly. <br><textarea name="description" rows="10" cols="45"></textarea></label>
+                <label class="top">Last Name <input type="text" name="lname"></label>
+                <label class="top">Type your message below. <br><textarea name="description" rows="10" cols="45"></textarea></label>
 
             </fieldset>
 
-            <input type="submit" value="Join Now" class="submitBtn">
+            <input type="submit" value="Submit Now" class="submitBtn">
+
+
         </form>
     </main>
     <footer>
@@ -76,12 +73,13 @@
             <p>+63 922 8833 060</p>
         </div>
         <a href="#">Location</a>
-        <div id="base">
-            <p>&copy; 2022 <br> Ormoc Chamber of Commerce <br> Marielle Honey P. Chiong <br> WDD 230 Project</p>
+        <p>&copy; 2022 <br> Ormoc Chamber of Commerce <br> Marielle Honey P. Chiong <br> WDD 230 Project</p>
         </div>
         <p class="date"><span id="date1"></span></p>
-        <script src="https://chillyall.github.io/wdd230/scripts/myscripts.js"></script>
-        <script src="/wdd230/chamber/scripts/myscripts.js"></script>
     </footer>
+    
+    <script src="https://chillyall.github.io/wdd230/scripts/myscripts.js"></script>
+    <script src="/wdd230/chamber/scripts/myscripts.js"></script>
+    
 </body>
 </html>

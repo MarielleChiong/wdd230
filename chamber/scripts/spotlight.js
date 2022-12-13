@@ -27,7 +27,7 @@ async function displaySpotlightComp() {
         spotlight.children[0].textContent = business.name;
         spotlight.children[1].setAttribute("src", business.img);
         spotlight.children[2].textContent = business.phoneNumber;
-        spotlight.children[3].children[0].setAttribute("href", business.url);
+        spotlight.children[3].setAttribute("href", business.url);
 
     }
 }

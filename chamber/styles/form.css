@@ -1,11 +1,14 @@
 body {
-    background-color: #dadada;
+    background-color: #ffffff;
 }
 
 /* ---------- MAIN ------------- */
 
 main {
     text-align: left;
+    display: block;
+    padding: 40px;
+    margin: none;
 }
 
 
@@ -14,19 +17,20 @@ main {
 /* ---------- FORM ------------- */
 
 form {
-    border-radius: 25px;
-    background-color:  #dadada;
+    border-radius: 10px;
+    background-color:  #ffffff;
     box-shadow:  5px 5px 8px #c6c6c6,
                 -5px -5px 8px #ffffff;
 
-    margin: 45px 0;
+    margin: none;
+    border: 3px solid #303238;
     padding: 10px;
     width: 100%;
 }
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid #303238;
     border-radius: 10px;
     padding: .5rem 2%;
 }

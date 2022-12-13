@@ -13,12 +13,12 @@
 
 /* Basic Styles */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, legend {
     font-family: var(--heading-font);
 
 }
 
-p, a, button {
+p, a, button, label, input {
     font-family: var(--paragraph-font);
 }
 
@@ -122,16 +122,16 @@ nav ul li a {
 
 nav ul li a#open-tab {
     background-color: rgba(0, 0, 0, .3);
-    padding: 5px;
+    padding: 10px 75px;
 }
 
 
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, .3);
-    padding: 2% 25%;
+    padding: 10px 75px;
     color: var(--accent-1);
-    border-radius: 20%;
-    transition: .5s;
+    /* border-radius: 20%; */
+    /* transition: .5s; */
     width: 100%;
     margin: 0 auto;
 }
@@ -174,37 +174,59 @@ main {
 }
 main section {
     text-align: center;
-    min-height: 15em;
+    min-height: 10em;
     margin: 5px;
     padding: 10px;
     border: solid var(--primary-color);
     border-radius: 10px;
+    
+}
+#cta {
+    overflow: hidden;
+    position: relative;
+    
+}
+
+#cta img {
+    object-fit: cover;
+    position: relative;
+    min-height: 100%;
+
 }
 
 #spotlight-box {
     background-color: var(--primary-color);
     border-radius: 10px;
     display: block;
+    padding: 10px;
 }
 
 .spotlight {
-    background-color: var(--accent-1);
+    /* background-color: var(--accent-1); */
     margin: 0;
     border-radius: 0;
+    padding: 20px 10px;
+    color: var(--accent-2);
 }
 
-/* #sl1 {
-    border-radius: 10px 10px 0 0;
+.spotlight a {
+    color: var(--accent-2);
+    text-decoration: none;
 }
 
-#sl3 {
-    border-radius: 0 0 10px 10px;
-} */
+.spotlight img {
+    border-radius: 100px;
+    max-width: 55%;
+    width: 100%;
+    /* max-height: 40%; */
+
+}
 
 /* Weather Section */
 
 #weather-img {
     max-width: 35%;
+    margin: none;
 }
 
 #weather {
@@ -216,6 +238,48 @@ main section {
 .weatherIcon {
     max-width: 100px;
     width: 100%;
+}
+
+/* News Section */
+
+#news div {
+    border: 1px solid var(--primary-color);
+    margin: 5px 0;
+    padding: 10px;
+}
+
+#news div h3 a {
+    font-family: var(--heading-font);
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#news div h3 a:hover {
+    color: var(--secondary-color);
+}
+
+/* Join Section */
+
+#join {
+    background-color: var(--primary-color);
+    color: var(--accent-2);
+    padding: 20px;
+}
+
+#join-button {
+    background: var(--accent-2);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--paragraph-font);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#join-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent-2);
+    cursor: pointer;
 }
 
 
@@ -273,3 +337,5 @@ footer .date {
     text-align: right;
     padding: 0 10px;
 }
+
+
